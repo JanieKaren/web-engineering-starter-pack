@@ -39,8 +39,8 @@ body{
     gap: 2px;
 
 }
-.hero-section img{
-    position: absolute;
+.hero-img{
+    position: absolute;          /* Makes the image stick during scroll */
     width: 60vh;   
     height: auto;
     object-fit: cover;
@@ -94,7 +94,7 @@ body{
 }
 
 .section2{
-    background: aqua;
+    background: #9F7286;
 }
 
 .text{
@@ -130,4 +130,119 @@ body{
     }
     
     
+}
+.shape{
+    position:absolute;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 10; 
+    
+
+}
+
+
+
+
+
+.rectangle{
+    height: 3vw;      
+    border-radius: 0;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+}
+
+.circle{
+    height: 4vw;      
+    width:4vw;
+    border-radius: 50%;  
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); 
+}
+.yellow-big-circle{
+    background: #F7E6DC;                        
+    bottom: 10%;                  
+    left: 0;    
+    height: 18vw;      
+    width:18vw;
+    clip-path: inset(0 0 0 25%); 
+    transform: translateX(-25%); 
+}
+
+.pink-big-circle{                 
+    top:5%;        
+    right:0; 
+    height: 15vw;      
+    width:15vw;
+    clip-path: inset(0 10%  0 0); 
+    transform: translateX(10%);     
+}
+
+.light-pink-rectangle{              
+    top:3%;        
+    left:0;   
+    width:20vw; 
+}
+
+.pink-rectangle{               
+    top:12%;        
+    left:0;     
+    width:12vw; 
+}
+
+.pink{
+    background: #D68B92;    
+}
+
+.light-pink{
+    background: #DEB6C1;   
+}
+
+.yellow{
+    background: #F7E6DC;
+}
+
+.purple{
+    background: #B3A1B7;
+}
+
+.green{
+    background: #A8B9C1;
+}
+.plum{
+    background: #9F7286;
+}
+.plum-small-circle{
+    top:8%;        
+    left:5%; 
+}
+
+.green-rectangle{
+    bottom: 21%;        
+    left:10%;     
+    width:12vw; 
+}
+
+.right-green-rectangle{
+    top: 8%;        
+    right:4%;     
+    width:16vw; 
+}
+.yellow-rectangle{
+    top: 18%;        
+    right:3%;     
+    width:14vw; 
+}
+.purple-rectangle{
+    bottom: 12%;        
+    right:0;     
+    width:14vw; 
+}
+
+.right-light-pink-rectangle{
+    bottom:3%;        
+    right:0;   
+    width:20vw; 
+}
+
+.right-plum-small-circle{
+    bottom:8%;        
+    right:10%; 
 }
