@@ -3,86 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARALLAX</title>
+    <title>TEST</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v10/font/simple-icons.min.css">
 
+
+   
 </head>
 
 <body>
-    <section class ="hero-section parallax-container" id="hero">
-        <div class="text-grid layer">
-            <h3 class="tag-line">Code, Logic, and a Touch of Magic with</h3>
-            <h2>Janie Karen</h2>
-            <h2 class="shadow">Janie Karen</h2>
-            <h2 class="shadow">Janie Karen</h2>
-            <h2 class="shadow hide">Janie Karen</h2>
-            <h2 class="shadow hide">Janie Karen</h2>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="foreground"></div>
+            <div class="text-grid">
+                <h3 class="tag-line">Code, Logic, and a Touch of Magic with</h3>
+                <h2>Janie Karen</h2>
+                <h2 class="shadow">Janie Karen</h2>
+                <h2 class="shadow">Janie Karen</h2>
+            </div>
+            <div class = 'bottom-section layer'>
+                <div class="semicircle"></div>
+                <img src="images/janie.png" class="hero-img">
+                <h2 class="last-name">de Pedro</h2>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="left-about">
+                <div class="box">
+                    <h3>Hey, I'm Janie</h3>
+    
+                    <p>As a <strong>Computer Science</strong> student, I'm passionate about software development and eager to expand my skills.
+                     I strive to apply my problem-solving abilities to real-world challenges while continuously learning and 
+                     adapting to new technologies.</p>
+                </div>
+                
+            </div>
+            <div class="right-about">
+                <img src="images/janie.png" class="hero-img">
+                <div class="arch-background"></div>
+            </div>
+        </section>
+        <div class="buffer marquee">
+            <div class="marquee__inner" aria-hidden="true">
+                <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
+    
+            </div>
         </div>
-
-        <div class = 'bottom-section layer'>
-            <div class="semicircle"></div>
-            <img src="images/janie.png" class="hero-img">
-            <h2 class="last-name">de Pedro</h2>
-        </div>
-
-        <div class="layer">
-            <div class ='shape yellow-big-circle yellow circle'></div>    
-            <div class ='shape pink-big-circle pink circle'></div>
-            <div class ='shape light-pink-rectangle light-pink rectangle'></div>
-            <div class ='shape pink-rectangle pink rectangle'></div>
-            <div class ='shape green-rectangle green rectangle'></div>
-            <div class ='shape plum-small-circle plum circle'></div>
-            <div class ='shape right-green-rectangle green rectangle'></div>
-            <div class ='shape yellow-rectangle yellow rectangle'></div>
-            <div class ='shape purple-rectangle purple rectangle'></div>
-            <div class ='shape right-light-pink-rectangle light-pink rectangle'></div>
-            <div class ='shape right-plum-small-circle plum circle'></div>
-        </div>
-    </section>
-    <div class="buffer"></div>
-    <section class ="skills-section parallax-container" id="skills"> 
-        <div class="box">
-            <div>
+       
+        <section class="skills-section" id="skills">
+            <div class="heading-section">
+                <h2>Background</h2>
+                <p>With four years of experience in <strong>Computer Science</strong>,
+                     I’ve honed my skills in programming, development, and design. 
+                     This section showcases the languages, technologies, and frameworks I’ve worked with, 
+                     along with my expertise in full-stack development and UI/UX design.</p>
+            </div>
+        <!-- Languages Section -->
+            <div class="languages box">
                 <h3>Languages</h3>
-            <div class="languages skill-grid ">
-                <div class="icon-box"><i class="fa-brands fa-python"></i> Python</div>  
-                <div class="icon-box"><i class="fa-brands fa-html5"></i> HTML</div>  
-                <div class="icon-box"><i class="fa-brands fa-js"></i> JavaScript</div>  
-                <div class="icon-box"><i class="fa-brands fa-css3"></i> CSS</div>  
-                <div class="icon-box"><i class="fa-solid fa-coffee"></i> Java</div>  
-                <div class="icon-box"><i class="fa-solid fa-code"></i> C</div>  
-                <div class="icon-box"><i class="fa-solid fa-project-diagram"></i> Dart</div>                  
+                <ul class="skill-grid">
+                    <li class="icon-box pink"><i class="fa-brands fa-python"></i> Python</li>
+                    <li class="icon-box purple"><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li class="icon-box green"><i class="fa-brands fa-js"></i> JavaScript</li>
+                    <li class="icon-box plum"><i class="fa-brands fa-css3"></i> CSS</li>
+                    <li class="icon-box pink"><i class="fa-solid fa-coffee"></i> Java</li>
+                    <li class="icon-box purple"><i class="fa-solid fa-code"></i> C</li>
+                    <li class="icon-box green"><i class="fa-solid fa-microchip"></i> Dart</li>  
+                </ul>
             </div>
-            </div>
-            
-            <div>
+    
+            <!-- Technologies and Frameworks Section -->
+            <div class="tech box">
                 <h3>Technologies and Frameworks</h3>
-            <div class="tech skill-grid">
-                <div class="icon-box"><i class="fa-brands fa-node-js"></i> Node.js</div>  
-                <div class="icon-box"><i class="fa-solid fa-cloud"></i> Firebase</div>  
-                <div class="icon-box"><i class="fa-solid fa-code-branch"></i> Django</div>  
-                <div class="icon-box"><i class="fa-brands fa-vuejs"></i> Vue.js</div>  
-                <div class="icon-box"><i class="fa-brands fa-git-alt"></i> Git</div>  
-                <div class="icon-box"><i class="fa-solid fa-pen-ruler"></i> Figma</div>
-            </div> 
+                <ul class="skill-grid">
+                    <li class="icon-box green"><i class="fa-brands fa-node-js"></i> Node.js</li>
+                    <li class="icon-box purple"><i class="fa-solid fa-cloud"></i> Firebase</li>
+                    <li class="icon-box pink"><i class="fa-solid fa-leaf"></i> Django</li>
+                    <li class="icon-box plum"><i class="fa-brands fa-vuejs"></i> Vue.js</li>
+                    <li class="icon-box green"><i class="fa-brands fa-git-alt"></i> Git</li>
+                    <li class="icon-box pink"><i class="fa-brands fa-figma"></i> Figma</li>
+                    <li class="icon-box plum"><i class="fa-brands fa-mobile-screen-button"></i> Flutter</li>
+                </ul>
             </div>
-            
-            <div>
+    
+            <!-- Development and Design Section -->
+            <div class="dev box">
                 <h3>Development and Design</h3>
-            <div class="dev skill-grid">
-                <div class="icon-box"><i class="fa-solid fa-layer-group"></i> Full-Stack Development</div>  
-                <div class="icon-box"><i class="fa-solid fa-globe"></i> Web Development</div>  
-                <div class="icon-box"><i class="fa-brands fa-android"></i> Android Development</div>
-                <div class="icon-box"><i class="fa-solid fa-cogs"></i> Tech Lead</div>
-                <div class="icon-box"><i class="fa-solid fa-search"></i> Quality Assurance</div>  
-                <div class="icon-box"><i class="fa-solid fa-palette"></i> UI/UX Design</div>   
+                <ul class="skill-grid">
+                    <li class="icon-box pink"><i class="fa-solid fa-layer-group"></i> Full-Stack Development</li>
+                    <li class="icon-box purple"><i class="fa-solid fa-globe"></i> Web Development</li>
+                    <li class="icon-box green"><i class="fa-brands fa-android"></i> Android Development</li>
+                    <li class="icon-box plum"><i class="fa-solid fa-cogs"></i> Tech Lead</li>
+                    <li class="icon-box pink"><i class="fa-solid fa-search"></i> Quality Assurance</li>
+                    <li class="icon-box purple"><i class="fa-solid fa-palette"></i> UI/UX Design</li>
+                </ul>
             </div>
+        </section>
+    
+        <div class="buffer marquee pink projects-buffer">
+            <div class="marquee__inner" aria-hidden="true">
+                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2>
+    
             </div>
-            
         </div>
-    </section>
+    
+        <section class="projects-section parallax-container" id="projects">
+            <ul>
+                <li class="project-card">
+                   <div class="project-images">
+                    <img src="images/uniqko-about.png" class ="img-1" alt="">
+                    <img src="images/uniqko-game.png"class ="img-2"  alt="">
+                   </div>
+                    <div class="project-info">
+                        <h3>UniqKo</h3>
+                        <p>(2024)</p>
+                        <h4>Data Communications & Networking</h4>
+                        <p>UI/UX | Frontend Dev</p>
+                        <a href="#" class="know-more">Know More</a>
+                        <p class="number">01</p>
+                    </div>
+                        
+                </li>
+                <li class="project-card">
+                    <div class="project-images">
+                        <img src="images/haul-a-day img1.jpg" class ="img-1 mobile" alt="">
+                        <img src="images/haul-a-day img2.png"class ="img-2 haul"  alt="">
+                    </div>
+                     <div class="project-info">
+                         <h3>Haul-a-Day</h3>
+                         <p>(2023-2024)</p>
+                         <h4>Software Engineering</h4>
+                         <p>UI/UX | Android Dev | Web Dev | Lead Dev | Teach Lead </p>
+                         <a href="#" class="know-more">Know More</a>
+                         <p class="number">02</p>
+                     </div>
+                         
+                 </li>
+                 <li class="project-card">
+                    <div class="project-images">
+                     <img src="images/honey-img1.png " class ="img-1" alt="">
+                     <img src="images/honey-img2.png"class ="img-2"  alt="">
+                    </div>
+                     <div class="project-info">
+                         <h3>HoneyOS</h3>
+                         <p>(2024)</p>
+                         <h4>Operating Systems</h4>
+                         <p>UI/UX | Backend Dev</p>
+                         <a href="#" class="know-more">Know More</a>
+                         <p class="number">03</p>
+                     </div>
+                         
+                 </li>
+            </ul>
+            
+        </section>
 
+        <section class="contact-section" id="contact">
+            <div class="left-contacts plum">
+                <h3>Get in Touch</h3>
+                <p>Send me a message or visit any of my socials to contact me.</p>
+                <ul >
+                    <li>
+                        <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-contacts">
+                <form action="#" method="POST" class="box">
+                    <!-- Name Field -->
+                    <div class="input-field">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Enter your name</label>
+                    </div>
+                
+                    <!-- Organization Field -->
+                    <div class="input-field">
+                        <input type="text" id="organization" name="organization" required>
+                        <label for="organization">Enter your organization</label>
+                    </div>
+                
+                    <!-- Email Field -->
+                    <div class="input-field">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Enter your email</label>
+                    </div>
+                
+                    <!-- Message Field -->
+                    <div class="input-field">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">Enter your message</label>
+                    </div>
+                
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                </form>
+                
+            </div>
+            <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                    <h2>CONTACTS</h2>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    
+    
 </body>
 
 </html>
