@@ -36,18 +36,6 @@
 
 }
 
-.dark-mode-button i::before {
-    content: "\f186"; 
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-
-:root:has(#dark-mode-toggle:checked) .dark-mode-button i::before {
-    content: "\f185";
-}
-
-
 .pink { background: var(--clr-pink) !important; }
 .light-pink { background: var(--clr-light-pink) !important; }
 .yellow { background: var(--clr-yellow)!important;}
@@ -68,16 +56,12 @@ ul{
     list-style: none;
 }
 
-
 html, body{
     height:100vh;
     overflow:hidden;
     
     scroll-behavior: smooth;
-
 }
-
-
 
 main{
     width: 100vw;
@@ -91,7 +75,6 @@ main{
 }
 
 
-
 h2{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),5px 5px 70px rgba(255, 255, 255, 0.5);
     font-family: 'Franklin Gothic Medium';
@@ -103,8 +86,6 @@ h2{
     line-height: 10vw;;
     letter-spacing: 10px;
 }
-
-
 
 h3{
     font-family:Arial, Helvetica, sans-serif;
@@ -129,6 +110,7 @@ h4{
 }
 
 .shadow{opacity: 0.5;}
+.hide{display: none;}
 
 .hero-section, .about-section{
     width: 100%;
@@ -181,7 +163,7 @@ h4{
     width:100%;
     transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
 }
-  
+ 
 .bottom-section{
     width: 100%;
     height: 50vh;
@@ -226,9 +208,7 @@ h4{
     grid-template: 1fr/ 60% 40%;
     background: linear-gradient(to bottom, var(--clr-plum), var(--clr-light-pink));
     align-items: center;
-    justify-content: center;
-    
-    
+    justify-content: center;  
 }
 
 .left-about{
@@ -242,7 +222,6 @@ h4{
      justify-content: center;       
            
 }
-
 
 .about-section h3{
     font-size: 6vh;
@@ -296,6 +275,7 @@ h4{
     z-index: 1; 
 }
 
+
 /*SKILLS SECTION*/
 .buffer {
     width: 100%;
@@ -316,7 +296,7 @@ h4{
     z-index: 1; 
 }
 
-  .marquee {
+.marquee {
     position: relative;
     overflow: hidden;
     --offset: 20vw;
@@ -338,7 +318,6 @@ h4{
     padding: 0 2vw;
 }
 
-
 .skills-section {
     background-image: var(--skills-background);
     text-align: center;
@@ -349,7 +328,6 @@ h4{
 .heading-section {
     width: 100%;
     padding-inline:7vw;
-    
     background: linear-gradient(180deg, var(--clr-plum), transparent, transparent);
     text-align: left; 
     box-sizing: border-box;
@@ -393,7 +371,6 @@ h4{
     text-align: left;
     overflow: hidden;
 }
-
 
 
 .skills-section h3{
@@ -442,6 +419,7 @@ h4{
                 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
+/*PROJECTS SECTION*/
 .projects-buffer::after{
     background: linear-gradient(0, var(--clr-pink), transparent);
 }
@@ -491,14 +469,13 @@ h4{
 }
 
 
-/* Content section inside the card */
 .project-card .project-info{
     position: relative;
     z-index: 3;                  
     padding: 20px;
 }
 
-/* Image 1 */
+
 .img-1 {
     max-width: 30vw;         
     height: auto;               
@@ -510,7 +487,6 @@ h4{
     pointer-events: auto;               
 }
 
-/* Image 2 */
 .img-2 {
     max-width: 30vw;
     height: auto;
@@ -574,7 +550,7 @@ h4{
     transform: scale(1.1);
 }
 
-
+/*HEADER*/
 .header {
     position: fixed;
     top: 0;
@@ -601,51 +577,51 @@ h4{
     transition: all 0.3s ease;
   }
   
-  .header::before {
+.header::before {
     content: "";
     position: absolute;
     top: 0;
-    
+
     width: 100%;
     height: 100%;
     background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      transparent
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
     );
     transition: 0.5s;
     border-radius: 50px;
     z-index: -1;
-  }
-  
-  .header nav ul {
+}
+
+.header nav ul {
     display: flex;
     gap: 30px;
     margin: 0;
     padding: 0;
-  }
-  
-  .header nav ul li a, .header nav ul li label {
+}
+
+.header nav ul li a, .header nav ul li label {
     text-decoration: none;
     color: var(--primary-text-color);
     font-family: Helvetica;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .header nav ul li a:hover {
+}
+
+.header nav ul li a:hover {
     color: var(--heading-text-color);
     transform: scale(1.1) !important;
-    
-  }
+
+}
 
 
-  .header:hover {
+.header:hover {
     transform: scale(1.03)  translateX(-50%); 
-  }
+}
 
-/* Hide the checkbox itself */
+
 .dark-mode-checkbox {
     display: none;
   }
@@ -669,8 +645,20 @@ h4{
     border:1px solid var(--heading-text-color);
 }
 
+.dark-mode-button i::before {
+    content: "\f186"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+:root:has(#dark-mode-toggle:checked) .dark-mode-button i::before {
+    content: "\f185";
+}
+
+/*Contact Section*/
 .contact-section {
-    background: var(--hero-background) no-repeat center/cover;
+    background: var(--hero-background) ;
     min-height: auto;  
     display: grid;
     grid-template: 90% 10% / 30% 70%; 
@@ -683,7 +671,6 @@ h4{
 
 .left-contacts, .right-contacts{
     height:100%;
-
 }
 
 .right-contacts{
@@ -758,6 +745,7 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: flex-start;  
+    justify-content: center;
     text-align: start;     
     gap: 20px;                      
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -829,12 +817,10 @@ h4{
 
     .hide{
         display:block;
+        opacity: 0.25;
     }
 
-    .hide2{
-        display:none;
 
-    }
     h2{
         letter-spacing: 5px;
     }
@@ -845,12 +831,16 @@ h4{
 }
 
 @media screen and (max-width: 600px) {
-    .hide2{
-        display:block;
-        opacity: 0.25;
-    }
+
     .hero-img{
         width:50vh;
+    }
+    h3{
+        font-size: 6vh;
+    }
+
+    .hero-section h3{
+        font-size: 4vh;
     }
 
 
@@ -950,9 +940,18 @@ h4{
         gap: 20px;
     }
 
+    .marquee__inner h2{
+        font-size: 5vh;
+    }
+
+    .header{
+        display: none !important;
+    }
+
 
     
 }
+
 
 @keyframes marquee {
     0% {
@@ -1023,7 +1022,7 @@ h4{
     opacity: 0;
   }
 
-  .box:hover::before {
+.box:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
   }
@@ -1031,24 +1030,3 @@ h4{
 .project-card p{
     font-size: medium;
 }
-
-.dark-mode-checkbox:checked ~ .dark-mode-button i {
-    content: "\f185"; /* FontAwesome sun icon */
-  }
-/* Dark Mode Styles when checkbox is checked */
-.dark-mode-checkbox:checked ~ body {
-    background-color: #121212;
-    color: #f1f1f1;
-  }
-  
-  /* Apply dark mode colors when checkbox is checked */
-  .dark-mode-checkbox:checked ~ body {
-    --primary-text-color: white;
-    --heading-text-color: white;
-    --clr-pink: #D68B92;
-    --clr-light-pink: #DEB6C1;
-    --clr-yellow: #F7E6DC;
-    --clr-purple: #B3A1B7;
-    --clr-green: #A8B9C1;
-    --clr-plum: #9F7286;
-  }
