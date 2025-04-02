@@ -20,13 +20,21 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <!-- Hidden checkbox for dark mode toggle -->
+                    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+                    
+                    <!-- Label styled as a button (using an icon inside it) -->
+                    <label for="dark-mode-toggle" class="dark-mode-button">
+                        <i></i>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero-section" id="hero">
             <div class="foreground"></div>
-            <div class="text-grid">
+            <div class="text-grid fade-out">
                 <h3 class="tag-line">Code, Logic, and a Touch of Magic with</h3>
                 <h2>Janie Karen</h2>
                 <h2 class="shadow">Janie Karen</h2>
@@ -40,7 +48,7 @@
         </section>
         <section class="about-section" id="about">
             <div class="left-about">
-                <div class="box">
+                <div class="box fade-in">
                     <h3>Hey, I'm Janie</h3>
     
                     <p>As a <strong>Computer Science</strong> student, I'm passionate about software development and eager to expand my skills.
@@ -50,7 +58,7 @@
                 
             </div>
             <div class="right-about">
-                <img src="images/janie.png" class="hero-img">
+                <img src="images/janie.png" class="hero-img fade-in">
                 <div class="arch-background"></div>
             </div>
         </section>
@@ -68,6 +76,7 @@
        
         <section class="skills-section" id="skills">
             <div class="heading-section">
+
                 <h2>Background</h2>
                 <p>With four years of experience in <strong>Computer Science</strong>,
                      I’ve honed my skills in programming, development, and design. 
@@ -75,7 +84,7 @@
                      along with my expertise in full-stack development and UI/UX design.</p>
             </div>
         <!-- Languages Section -->
-            <div class="languages box">
+            <div class="languages box fade-in">
                 <h3>Languages</h3>
                 <ul class="skill-grid">
                     <li class="icon-box pink"><i class="fa-brands fa-python"></i> Python</li>
@@ -89,7 +98,7 @@
             </div>
     
             <!-- Technologies and Frameworks Section -->
-            <div class="tech box">
+            <div class="tech box fade-in">
                 <h3>Technologies and Frameworks</h3>
                 <ul class="skill-grid">
                     <li class="icon-box green"><i class="fa-brands fa-node-js"></i> Node.js</li>
@@ -103,7 +112,7 @@
             </div>
     
             <!-- Development and Design Section -->
-            <div class="dev box">
+            <div class="dev box fade-in">
                 <h3>Development and Design</h3>
                 <ul class="skill-grid">
                     <li class="icon-box pink"><i class="fa-solid fa-layer-group"></i> Full-Stack Development</li>
@@ -128,13 +137,13 @@
             </div>
         </div>
     
-        <section class="projects-section parallax-container" id="projects">
-            <ul>
-                <li class="project-card">
-                   <div class="project-images">
-                    <img src="images/uniqko-about.png" class ="img-1" alt="">
-                    <img src="images/uniqko-game.png"class ="img-2"  alt="">
-                   </div>
+        <section class="projects-section" id="projects">
+            <div class="project-list">
+                <article class="project-card">
+                    <div class="project-images">
+                        <img src="images/uniqko-about.png" class="img-1" alt="">
+                        <img src="images/uniqko-game.png" class="img-2" alt="">
+                    </div>
                     <div class="project-info">
                         <h3>UniqKo</h3>
                         <p>(2024)</p>
@@ -143,44 +152,45 @@
                         <a href="#" class="know-more">Know More</a>
                         <p class="number">01</p>
                     </div>
-                        
-                </li>
-                <li class="project-card">
+                </article>
+                <article class="project-card">
                     <div class="project-images">
-                        <img src="images/haul-a-day img1.jpg" class ="img-1 mobile" alt="">
-                        <img src="images/haul-a-day img2.png"class ="img-2 haul"  alt="">
+                        <img src="images/haul-a-day img1.jpg" class="img-1 mobile" alt="">
+                        <img src="images/haul-a-day img2.png" class="img-2 haul" alt="">
                     </div>
-                     <div class="project-info">
-                         <h3>Haul-a-Day</h3>
-                         <p>(2023-2024)</p>
-                         <h4>Software Engineering</h4>
-                         <p>UI/UX | Android Dev | Web Dev | Lead Dev | Teach Lead </p>
-                         <a href="#" class="know-more">Know More</a>
-                         <p class="number">02</p>
-                     </div>
-                         
-                 </li>
-                 <li class="project-card">
+                    <div class="project-info">
+                        <h3>Haul-a-Day</h3>
+                        <p>(2023-2024)</p>
+                        <h4>Software Engineering</h4>
+                        <p>UI/UX | Android Dev | Web Dev | Lead Dev | Teach Lead</p>
+                        <a href="#" class="know-more">Know More</a>
+                        <p class="number">02</p>
+                    </div>
+                </article>
+                <article class="project-card">
                     <div class="project-images">
-                     <img src="images/honey-img1.png " class ="img-1" alt="">
-                     <img src="images/honey-img2.png"class ="img-2"  alt="">
+                        <img src="images/honey-img1.png" class="img-1" alt="">
+                        <img src="images/honey-img2.png" class="img-2" alt="">
                     </div>
-                     <div class="project-info">
-                         <h3>HoneyOS</h3>
-                         <p>(2024)</p>
-                         <h4>Operating Systems</h4>
-                         <p>UI/UX | Backend Dev</p>
-                         <a href="#" class="know-more">Know More</a>
-                         <p class="number">03</p>
-                     </div>
-                         
-                 </li>
-            </ul>
+                    <div class="project-info">
+                        <h3>HoneyOS</h3>
+                        <p>(2024)</p>
+                        <h4>Operating Systems</h4>
+                        <p>UI/UX | Backend Dev</p>
+                        <a href="#" class="know-more">Know More</a>
+                        <p class="number">03</p>
+                    </div>
+                </article>
+
+           
+                
+            </div>
+            
             
         </section>
 
         <section class="contact-section" id="contact">
-            <div class="left-contacts plum">
+            <div class="left-contacts plum fade-in">
                 <h3>Get in Touch</h3>
                 <p>Send me a message or visit any of my socials to contact me.</p>
                 <ul >
@@ -197,7 +207,7 @@
                 </ul>
             </div>
             <div class="right-contacts">
-                <form action="#" method="POST" class="box">
+                <form action="#" method="POST" class="box fade-in">
                     <!-- Name Field -->
                     <div class="input-field">
                         <input type="text" id="name" name="name" required>
